@@ -1,0 +1,22 @@
+= Discovery Service
+:toc:
+
+This application will act as an gateway for the home-monitor.
+
+IMPORTANT: To be able to run this application the https://github.com/konraifen88-home/config-service[configuration-service] has to be started
+before running this application.
+
+== Usage
+
+To be able to start the application, the https://github.com/konraifen88-home/config-service[configuration-service] has
+ to be started before. The url to the configuration service can be modified using the CONFIG_SERVICE_URL (default:
+ http://localhost:8088) environment variable.
+
+
+If the configuration service is running and defined the application can be run with:
+
+----
+gradlew bootRun
+----
+
+TIP: Environment variables seems not to be applied when using `gradlew`.
