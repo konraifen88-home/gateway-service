@@ -1,4 +1,4 @@
-= Discovery Service
+= Gateway Service
 :toc:
 
 This application will act as an gateway for the home-monitor.
