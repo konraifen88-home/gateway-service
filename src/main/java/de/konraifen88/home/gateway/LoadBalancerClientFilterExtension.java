@@ -43,7 +43,7 @@ public class LoadBalancerClientFilterExtension extends LoadBalancerClientFilter 
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        exchange.getAttributes().put(GATEWAY_SCHEME_PREFIX_ATTR, "https");
+//        exchange.getAttributes().put(GATEWAY_SCHEME_PREFIX_ATTR, "https");
         logSomeValuesUsedInDefaultLoadBalancerFilter(exchange);
         return super.filter(exchange, chain);
     }
